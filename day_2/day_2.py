@@ -8,9 +8,7 @@ def is_safe(report):
             check_in_range(abs(report[i] - report[i + 1]))
             for i in range(len(report) - 1)
         ]
-        if all(diffs):
-            return True
-
+        return all(diffs)
 
 # Part 1
 reports = []
